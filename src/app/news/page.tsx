@@ -1,8 +1,6 @@
 import React from "react";
 import News from "./News";
 
-export const dynamic = "force-dynamic";
-
 const news = [
   {
     title: "We have opend new shop",

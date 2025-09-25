@@ -2,6 +2,8 @@ import React from "react";
 import Products from "./Products";
 import axiosInstance from "@/axios";
 
+export const dynamic = "force-dynamic";
+
 export const getProducts = async () => {
   try {
     const res = await axiosInstance.get("/products");
