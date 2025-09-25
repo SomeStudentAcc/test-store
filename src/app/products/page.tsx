@@ -1,13 +1,12 @@
 import React from "react";
 import Products from "./Products";
 import axiosInstance from "@/axios";
-import axios from "axios";
 
 export const dynamic = "force-dynamic";
 
 export const getProducts = async () => {
   try {
-    const res = await axios.get("https://fakestoreapi.com/products");
+    const res = await axiosInstance.get("/products");
     console.log(res.data);
     return res.data;
   } catch (error) {
